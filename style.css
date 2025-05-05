@@ -1,0 +1,273 @@
+:root {
+    --bg-color: #fffaf4;
+    --primary-color: #f9d5d3;
+    --accent-color: #c3e0dc;
+    --text-color: #5c5c5c;
+    --heading-color: #a67458;
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: var(--heading-color);
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: var(--heading-color);
+    font-weight: 600;
+  }
+  
+  .hero {
+    padding: 3rem 1rem;
+    background-color: var(--accent-color);
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+  }
+  
+  .gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    margin-bottom: 2rem;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .gallery caption {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--heading-color);
+  }
+  
+  /* Review Us Section */
+  #review {
+    background-color: var(--accent-color);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  #review h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+  }
+  
+  #review input,
+  #review textarea,
+  #review select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  #review .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  #review .rating label {
+    margin-right: 0.5rem;
+    font-weight: 600;
+  }
+  
+  #review button {
+    padding: 0.8rem 2rem;
+    background-color: var(--heading-color);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #review button:hover {
+    background-color: #a67458;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .contact-details {
+    background-color: var(--accent-color);
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+  }
+  
+  .contact-details summary {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--heading-color);
+    outline: none;
+    padding: 0.5rem 0;
+  }
+  
+  .contact-details p {
+    margin: 0.5rem 0;
+  }
+
+  .about {
+    background-color: var(--bg-color);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+  }
+
+  .order-section {
+    background-color: var(--primary-color);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .order-section details {
+    display: inline-block;
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+    max-width: 450px;
+    transition: all 0.3s ease;
+  }
+  
+  .order-section summary {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    list-style: none;
+    outline: none;
+    position: relative;
+    padding: 0.5rem 0;
+  }
+  
+  .order-section summary::marker,
+  .order-section summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .order-section summary::after {
+    content: '▼';
+    font-size: 0.9rem;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .order-section[open] summary::after {
+    transform: rotate(180deg);
+  }
+  
+  .order-details {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+  
+  .order-details p {
+    margin: 0.5rem 0;
+  }
+  
+  .order-details a {
+    color: var(--heading-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .order-details a:hover {
+    text-decoration: underline;
+  }
+  ✅ And in your HTML, place this section above the Review section:
+  html
+  Copy
+  Edit
+  <section class="order-section">
+    <details>
+      <summary>🍰 Order Now</summary>
+      <div class="order-details">
+        <p><strong>Email:</strong> <a href="mailto:delbakesorder@example.com">delbakesorder@example.com</a></p>
+        <p><strong>Mobile:</strong> <a href="tel:+918882296454">8882296454</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/918882296455" target="_blank">8882296455</a></p>
+      </div>
+    </details>
+  </section>

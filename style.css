@@ -275,48 +275,51 @@
   /* Your existing styles */
 
 /* Add the mobile-first responsive design at the bottom */
+/* Existing mobile-first media query */
 @media only screen and (max-width: 768px) {
-  /* Header */
-  header {
-    padding: 10px;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  /* Gallery */
-  .gallery {
+  /* Existing styles */
+  
+  /* Product sections (Cake, Pastry, Cookies, Cupcakes) */
+  .product-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .gallery-item {
-    flex: 1 1 100%;
-    margin-bottom: 2rem;
-  }
-
-  .about-content p {
-    font-size: 1rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .order-section {
     padding: 2rem 1rem;
   }
 
-  footer {
-    font-size: 0.9rem;
+  .product-section img {
+    width: 80%; /* Make images smaller */
+    max-width: 300px; /* Ensure images don't get too large */
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .product-section .product-info {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .product-section .product-info h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .product-section .product-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-section .product-info .price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust buttons for mobile */
+  .product-section .product-info button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
 }
+
